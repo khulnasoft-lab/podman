@@ -101,7 +101,7 @@ esac
 printf "[engine]\ndatabase_backend=\"$CI_DESIRED_DATABASE\"\n" > /etc/containers/containers.conf.d/92-db.conf
 
 # For debian envs pre-configure storage driver as overlay.
-# See: Discussion here https://github.com/containers/podman/pull/18510#discussion_r1189812306
+# See: Discussion here https://github.com/khulnasoft-lab/podman/pull/18510#discussion_r1189812306
 # for more details.
 # TODO: remove this once all CI VM have newer buildah version. (i.e where buildah
 # does not defaults to using `vfs` as storage driver)

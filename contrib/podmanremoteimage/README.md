@@ -11,15 +11,15 @@ Users can copy those binaries onto the specific platforms using following instru
 
 - For Windows binary
 ```bash
-$ podman cp $(podman create --name remote-temp quay.io/containers/podman-remote-artifacts:latest):/windows/podman.exe . && podman rm remote-temp
+$ podman cp $(podman create --name remote-temp quay.io/khulnasoft-lab/podman-remote-artifacts:latest):/windows/podman.exe . && podman rm remote-temp
 ```
 
 - For Linux binary
 ```bash
-$ podman cp $(podman create --name remote-temp quay.io/containers/podman-remote-artifacts:latest):/podman-remote-static-linux_amd64 . && podman rm remote-temp
+$ podman cp $(podman create --name remote-temp quay.io/khulnasoft-lab/podman-remote-artifacts:latest):/podman-remote-static-linux_amd64 . && podman rm remote-temp
 ```
 
 - For Mac binary
 ```bash
-$ podman cp $(podman create --name remote-temp quay.io/containers/podman-remote-artifacts:latest):/darwin/podman . && podman rm remote-temp
+$ podman cp $(podman create --name remote-temp quay.io/khulnasoft-lab/podman-remote-artifacts:latest):/darwin/podman . && podman rm remote-temp
 ```

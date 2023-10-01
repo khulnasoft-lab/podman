@@ -9,8 +9,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	"github.com/sirupsen/logrus"
 )
 

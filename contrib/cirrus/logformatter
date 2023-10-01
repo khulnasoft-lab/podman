@@ -430,7 +430,7 @@ END_HTML
             # and 'test/system' because there's no way to get them from log.
             #
             #          1  2      2               13     4         43           5
-            $line =~ s{(in(\stest)?\s+file\s+\S+/)(\S+\.(bats|bash)),\s+line\s+(\d+)}{$1<a class="codelink" href="https://github.com/containers/podman/blob/$git_commit/test/system/$3#L$5">$3, line $5</a>};
+            $line =~ s{(in(\stest)?\s+file\s+\S+/)(\S+\.(bats|bash)),\s+line\s+(\d+)}{$1<a class="codelink" href="https://github.com/khulnasoft-lab/podman/blob/$git_commit/test/system/$3#L$5">$3, line $5</a>};
 
             if ($css) {
                 # Make it linkable, e.g. foo.html#t--00001

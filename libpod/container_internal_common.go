@@ -36,15 +36,15 @@ import (
 	"github.com/containers/common/pkg/umask"
 	cutil "github.com/containers/common/pkg/util"
 	is "github.com/containers/image/v5/storage"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
-	"github.com/containers/podman/v4/pkg/annotations"
-	"github.com/containers/podman/v4/pkg/checkpoint/crutils"
-	"github.com/containers/podman/v4/pkg/criu"
-	"github.com/containers/podman/v4/pkg/lookup"
-	"github.com/containers/podman/v4/pkg/rootless"
-	"github.com/containers/podman/v4/pkg/util"
-	"github.com/containers/podman/v4/version"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/pkg/annotations"
+	"github.com/khulnasoft-lab/podman/v4/pkg/checkpoint/crutils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/criu"
+	"github.com/khulnasoft-lab/podman/v4/pkg/lookup"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/version"
 	"github.com/containers/storage/pkg/archive"
 	"github.com/containers/storage/pkg/idtools"
 	"github.com/containers/storage/pkg/lockfile"
@@ -2078,7 +2078,7 @@ func (c *Container) addResolvConf() error {
 	// If NetworkBackend is `netavark` do not populate `/etc/resolv.conf`
 	// with custom dns server since after https://github.com/containers/netavark/pull/452
 	// netavark will always set required `nameservers` in StatusBlock and libpod
-	// will correctly populate `networkNameServers`. Also see https://github.com/containers/podman/issues/16172
+	// will correctly populate `networkNameServers`. Also see https://github.com/khulnasoft-lab/podman/issues/16172
 
 	// Exception: Populate `/etc/resolv.conf` if container is not connected to any network
 	// with dns enabled then we do not get any nameservers back.
@@ -2871,7 +2871,7 @@ func (c *Container) fixVolumePermissions(v *ContainerNamedVolume) error {
 		}
 
 		// Make sure the new volume matches the permissions of the target directory.
-		// https://github.com/containers/podman/issues/10188
+		// https://github.com/khulnasoft-lab/podman/issues/10188
 		st, err := os.Lstat(filepath.Join(c.state.Mountpoint, v.Dest))
 		if err == nil {
 			if stat, ok := st.Sys().(*syscall.Stat_t); ok {

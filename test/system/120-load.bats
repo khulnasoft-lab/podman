@@ -13,7 +13,7 @@ function teardown() {
     # reloading the default $IMAGE in a way that appears normal but
     # is not actually the same as what is normally pulled, e.g.,
     # annotations and image digests may be different. See
-    # https://github.com/containers/podman/discussions/17911
+    # https://github.com/khulnasoft-lab/podman/discussions/17911
     run_podman rmi -a -f
 
     basic_teardown

@@ -13,9 +13,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/containers/podman/v4/pkg/systemd/parser"
-	"github.com/containers/podman/v4/pkg/systemd/quadlet"
-	"github.com/containers/podman/v4/version/rawversion"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/parser"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/quadlet"
+	"github.com/khulnasoft-lab/podman/v4/version/rawversion"
 )
 
 // This commandline app is the systemd generator (system and user,
@@ -435,7 +435,7 @@ func process() error {
 	}
 
 	if len(units) == 0 {
-		// containers/podman/issues/17374: exit cleanly but log that we
+		// khulnasoft-lab/podman/issues/17374: exit cleanly but log that we
 		// had nothing to do
 		Debugf("No files parsed from %s", sourcePaths)
 		return prevError

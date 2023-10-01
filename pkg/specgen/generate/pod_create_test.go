@@ -4,7 +4,7 @@ import (
 	"net"
 
 	"github.com/containers/common/libnetwork/types"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	"github.com/stretchr/testify/assert"
 
 	"testing"

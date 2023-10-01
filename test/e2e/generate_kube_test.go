@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 
-	v1 "github.com/containers/podman/v4/pkg/k8s.io/api/core/v1"
-	"github.com/containers/podman/v4/pkg/util"
-	. "github.com/containers/podman/v4/test/utils"
+	v1 "github.com/khulnasoft-lab/podman/v4/pkg/k8s.io/api/core/v1"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gexec"
@@ -848,7 +848,7 @@ var _ = Describe("Podman kube generate", func() {
 	})
 
 	It("podman generate kube when bind-mounting '/' and '/root' at the same time ", func() {
-		// Fixes https://github.com/containers/podman/issues/9764
+		// Fixes https://github.com/khulnasoft-lab/podman/issues/9764
 
 		ctrName := "mount-root-ctr"
 		session1 := podmanTest.Podman([]string{"run", "-d", "--pod", "new:mount-root-conflict", "--name", ctrName,
@@ -1358,8 +1358,8 @@ USER test1`
 	})
 
 	It("podman generate kube can export env variables correctly", func() {
-		// Fixes https://github.com/containers/podman/issues/12647
-		// PR https://github.com/containers/podman/pull/12648
+		// Fixes https://github.com/khulnasoft-lab/podman/issues/12647
+		// PR https://github.com/khulnasoft-lab/podman/pull/12648
 
 		ctrName := "gen-kube-env-ctr"
 		podName := "gen-kube-env"

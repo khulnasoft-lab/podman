@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/containers/common/pkg/cgroups"
-	"github.com/containers/podman/v4/libpod/define"
-	. "github.com/containers/podman/v4/test/utils"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	"github.com/containers/storage/pkg/stringid"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

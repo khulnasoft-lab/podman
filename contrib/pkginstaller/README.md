@@ -13,7 +13,7 @@ $ make ARCH=<amd64 | aarch64> CODESIGN_IDENTITY=<ID> PRODUCTSIGN_IDENTITY=<ID> N
 The generated pkg will be written to `out/podman-macos-installer-*.pkg`.
 Currently the pkg installs `podman`, `qemu`, `gvproxy` and `podman-mac-helper` to `/opt/podman`
 
-The `qemu` build it uses is from [containers/podman-machine-qemu](https://github.com/containers/podman-machine-qemu)
+The `qemu` build it uses is from [khulnasoft-lab/podman-machine-qemu](https://github.com/khulnasoft-lab/podman-machine-qemu)
 
 ## Uninstalling
 

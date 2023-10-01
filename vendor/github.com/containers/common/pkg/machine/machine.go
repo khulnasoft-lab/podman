@@ -18,7 +18,7 @@ type MachineMarker struct {
 }
 
 const (
-	markerFile = "/etc/containers/podman-machine"
+	markerFile = "/etc/khulnasoft-lab/podman-machine"
 	Wsl        = "wsl"
 	Qemu       = "qemu"
 )

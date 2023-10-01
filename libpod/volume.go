@@ -3,9 +3,9 @@ package libpod
 import (
 	"time"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/lock"
-	"github.com/containers/podman/v4/libpod/plugin"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/lock"
+	"github.com/khulnasoft-lab/podman/v4/libpod/plugin"
 	"github.com/containers/storage/pkg/directory"
 )
 

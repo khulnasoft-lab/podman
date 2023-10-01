@@ -10,8 +10,8 @@ import (
 	"github.com/containers/common/libimage"
 	is "github.com/containers/image/v5/storage"
 	"github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
 	"github.com/sirupsen/logrus"
 )
 

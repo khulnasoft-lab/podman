@@ -5,8 +5,8 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/signal"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/signal"
 	"github.com/sirupsen/logrus"
 )
 

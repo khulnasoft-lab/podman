@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strconv"
 
-	. "github.com/containers/podman/v4/test/utils"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	"github.com/containers/storage/pkg/stringid"
 	"github.com/docker/go-units"
 	. "github.com/onsi/ginkgo/v2"
@@ -247,7 +247,7 @@ var _ = Describe("Podman ps", func() {
 		result.WaitWithDefaultTimeout()
 		Expect(result).Should(Exit(0))
 		Expect(result.OutputToString()).To(BeValidJSON())
-		// https://github.com/containers/podman/issues/16436
+		// https://github.com/khulnasoft-lab/podman/issues/16436
 		Expect(result.OutputToString()).To(HavePrefix("{"), "test for single json object and not array see #16436")
 	})
 

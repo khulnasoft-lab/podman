@@ -11,9 +11,9 @@ import (
 	"strconv"
 
 	imageTypes "github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/pkg/auth"
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/auth"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 // Push is the binding for libpod's endpoints for push images.  Note that

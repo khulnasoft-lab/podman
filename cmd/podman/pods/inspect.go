@@ -1,11 +1,11 @@
 package pods
 
 import (
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/inspect"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/cmd/podman/validate"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/inspect"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/validate"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 	"github.com/spf13/cobra"
 )
 
@@ -42,7 +42,7 @@ func init() {
 
 func inspectExec(cmd *cobra.Command, args []string) error {
 	// We need backwards compat with the old podman pod inspect behavior.
-	// https://github.com/containers/podman/pull/15675
+	// https://github.com/khulnasoft-lab/podman/pull/15675
 	inspectOpts.Type = common.PodLegacyType
 	return inspect.Inspect(args, *inspectOpts)
 }

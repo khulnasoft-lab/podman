@@ -25,12 +25,12 @@ import (
 	"github.com/containers/image/v5/signature"
 	"github.com/containers/image/v5/transports"
 	"github.com/containers/image/v5/transports/alltransports"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/domain/entities/reports"
-	domainUtils "github.com/containers/podman/v4/pkg/domain/utils"
-	"github.com/containers/podman/v4/pkg/errorhandling"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities/reports"
+	domainUtils "github.com/khulnasoft-lab/podman/v4/pkg/domain/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/errorhandling"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/containers/storage"
 	"github.com/opencontainers/go-digest"
 	imgspecv1 "github.com/opencontainers/image-spec/specs-go/v1"
@@ -421,7 +421,7 @@ func (ir *ImageEngine) Save(ctx context.Context, nameOrID string, tags []string,
 	saveOptions.SignaturePolicyPath = options.SignaturePolicy
 
 	// Force signature removal to preserve backwards compat.
-	// See https://github.com/containers/podman/pull/11669#issuecomment-925250264
+	// See https://github.com/khulnasoft-lab/podman/pull/11669#issuecomment-925250264
 	saveOptions.RemoveSignatures = true
 
 	if !options.Quiet {

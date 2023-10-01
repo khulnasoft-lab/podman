@@ -10,8 +10,8 @@ import (
 	"os"
 
 	"github.com/containers/common/pkg/resize"
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/term"
 )

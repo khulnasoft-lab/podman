@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 // Creates a new volume
@@ -46,7 +46,7 @@ func (v *Volume) needsMount() bool {
 
 	// Commit 28138dafcc added the UID and GID options to this map
 	// However we should only mount when options other than uid and gid are set.
-	// see https://github.com/containers/podman/issues/10620
+	// see https://github.com/khulnasoft-lab/podman/issues/10620
 	index := 0
 	if _, ok := v.config.Options["UID"]; ok {
 		index++

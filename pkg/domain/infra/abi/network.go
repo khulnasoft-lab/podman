@@ -9,8 +9,8 @@ import (
 	"github.com/containers/common/libnetwork/types"
 	netutil "github.com/containers/common/libnetwork/util"
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 func (ic *ContainerEngine) NetworkUpdate(ctx context.Context, netName string, options entities.NetworkUpdateOptions) error {

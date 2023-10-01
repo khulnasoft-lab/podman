@@ -9,10 +9,10 @@ import (
 	"github.com/containers/common/pkg/config"
 	"github.com/containers/common/pkg/report"
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/cmd/podman/system"
-	"github.com/containers/podman/v4/cmd/podman/validate"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/system"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/validate"
 	"github.com/spf13/cobra"
 )
 

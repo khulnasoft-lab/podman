@@ -3,9 +3,9 @@ package volumes
 import (
 	"fmt"
 
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/cmd/podman/utils"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/utils"
 	"github.com/spf13/cobra"
 )
 

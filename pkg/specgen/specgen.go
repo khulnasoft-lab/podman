@@ -9,7 +9,7 @@ import (
 	"github.com/containers/common/libimage"
 	nettypes "github.com/containers/common/libnetwork/types"
 	"github.com/containers/image/v5/manifest"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 	"github.com/containers/storage/types"
 	spec "github.com/opencontainers/runtime-spec/specs-go"
 )

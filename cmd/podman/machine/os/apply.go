@@ -4,11 +4,11 @@
 package os
 
 import (
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/machine"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/cmd/podman/validate"
-	"github.com/containers/podman/v4/pkg/machine/os"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/machine"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/validate"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine/os"
 	"github.com/spf13/cobra"
 )
 

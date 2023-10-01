@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
-	"github.com/containers/podman/v4/libpod/logs"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/libpod/logs"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/coreos/go-systemd/v22/sdjournal"
 	"github.com/sirupsen/logrus"
 )
@@ -119,7 +119,7 @@ func (c *Container) readFromJournal(ctx context.Context, options *logs.LogOption
 	}
 	// The initial "containerCouldBeLogging" state must be correct, we cannot rely on the start event being still in the journal.
 	// This can happen if the journal was rotated after the container was started or when --since is used.
-	// https://github.com/containers/podman/issues/16950
+	// https://github.com/khulnasoft-lab/podman/issues/16950
 	containerCouldBeLogging := c.ensureState(define.ContainerStateRunning, define.ContainerStateStopping)
 	c.lock.Unlock()
 

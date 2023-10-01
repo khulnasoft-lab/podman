@@ -10,9 +10,9 @@ import (
 
 	"github.com/containers/common/pkg/config"
 	"github.com/containers/common/pkg/parse"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/specgen"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	spec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

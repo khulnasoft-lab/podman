@@ -6,7 +6,7 @@ package libpod
 import (
 	"fmt"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 // GetContainerStats gets the running stats for a given container.

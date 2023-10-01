@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/containers/common/libnetwork/types"
-	. "github.com/containers/podman/v4/test/utils"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	"github.com/containers/storage/pkg/stringid"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -343,7 +343,7 @@ var _ = Describe("Podman network create", func() {
 		defer removeNetworkDevice(result.NetworkInterface)
 
 		// create a second network to check the auto assigned ipv4 subnet does not overlap
-		// https://github.com/containers/podman/issues/11032
+		// https://github.com/khulnasoft-lab/podman/issues/11032
 		netName2 := "dual-" + stringid.GenerateRandomID()
 		nc = podmanTest.Podman([]string{"network", "create", "--subnet", "fd00:10:3:2::/64", "--ipv6", netName2})
 		nc.WaitWithDefaultTimeout()

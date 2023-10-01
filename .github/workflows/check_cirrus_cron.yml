@@ -46,7 +46,7 @@ jobs:
             # This is where the scripts live
             - uses: actions/checkout@v3
               with:
-                  repository: containers/podman
+                  repository: khulnasoft-lab/podman
                   ref: 'main'
                   persist-credentials: false
 

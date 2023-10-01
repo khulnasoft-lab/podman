@@ -1,4 +1,4 @@
-module github.com/containers/podman/test/tools
+module github.com/khulnasoft-lab/podman/test/tools
 
 go 1.18
 

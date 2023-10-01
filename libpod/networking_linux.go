@@ -22,9 +22,9 @@ import (
 	netUtil "github.com/containers/common/libnetwork/util"
 	"github.com/containers/common/pkg/netns"
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/rootless"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/containers/storage/pkg/lockfile"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/selinux/go-selinux/label"
@@ -110,7 +110,7 @@ func (r *RootlessNetNS) Do(toRun func() error) error {
 		// Because the kernel will follow the symlink before mounting, it is not
 		// possible to mount a file at /etc/resolv.conf. We have to ensure that
 		// the link target will be available in the mount ns.
-		// see: https://github.com/containers/podman/issues/10855
+		// see: https://github.com/khulnasoft-lab/podman/issues/10855
 		resolvePath := "/etc/resolv.conf"
 		linkCount := 0
 		for i := 1; i < len(resolvePath); i++ {
@@ -119,10 +119,10 @@ func (r *RootlessNetNS) Do(toRun func() error) error {
 			// -> /run/systemd/resolve/stub-resolv.conf -> /run/systemd/resolve/resolv.conf
 			// we would put the netns resolv.conf file to the last path. However this will
 			// break dns because the second link does not exist in the mount ns.
-			// see https://github.com/containers/podman/issues/11222
+			// see https://github.com/khulnasoft-lab/podman/issues/11222
 			//
 			// We also need to resolve all path components not just the last file.
-			// see https://github.com/containers/podman/issues/12461
+			// see https://github.com/khulnasoft-lab/podman/issues/12461
 
 			if resolvePath[i] != '/' {
 				// if we are at the last char we need to inc i by one because there is no final slash
@@ -178,7 +178,7 @@ func (r *RootlessNetNS) Do(toRun func() error) error {
 		//
 		// Otherwise our bind-mount for /run/systemd/resolve/stub-resolv.conf is unmounted
 		// when systemd-resolved unlinks and recreates /run/systemd/resolve/stub-resolv.conf on the host.
-		// see: https://github.com/containers/podman/issues/10929
+		// see: https://github.com/khulnasoft-lab/podman/issues/10929
 		if strings.HasPrefix(resolvePath, "/run/systemd/resolve/") {
 			rsr := r.getPath("/run/systemd/resolve")
 			err = unix.Mount("", rsr, define.TypeTmpfs, unix.MS_NOEXEC|unix.MS_NOSUID|unix.MS_NODEV, "")
@@ -369,7 +369,7 @@ func (r *Runtime) GetRootlessNetNs(new bool) (*RootlessNetNS, error) {
 		// When the netns is not valid but the file exists we have to remove it first,
 		// https://github.com/containers/common/pull/1381 changed the behavior from
 		// NewNSWithName()so it will now error whe the file already exists.
-		// https://github.com/containers/podman/issues/17903#issuecomment-1494329622
+		// https://github.com/khulnasoft-lab/podman/issues/17903#issuecomment-1494329622
 		if errors.As(err, &ns.NSPathNotNSErr{}) {
 			logrus.Infof("rootless netns is no longer valid: %v", err)
 			// ignore errors, if something is wrong NewNSWithName() will fail below anyway

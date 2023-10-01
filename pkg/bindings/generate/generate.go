@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 func Systemd(ctx context.Context, nameOrID string, options *SystemdOptions) (*entities.GenerateSystemdReport, error) {

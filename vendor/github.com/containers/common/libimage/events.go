@@ -38,7 +38,7 @@ const (
 type Event struct {
 	// ID of the object (e.g., image ID).
 	ID string
-	// Name of the object (e.g., image name "quay.io/containers/podman:latest")
+	// Name of the object (e.g., image name "quay.io/khulnasoft-lab/podman:latest")
 	Name string
 	// Time of the event.
 	Time time.Time

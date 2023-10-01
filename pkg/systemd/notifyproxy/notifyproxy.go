@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 	"github.com/coreos/go-systemd/v22/daemon"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
@@ -115,7 +115,7 @@ func (p *NotifyProxy) waitForReady() {
 		// Read until the `READY` message is received or the connection
 		// is closed.
 
-		// See https://github.com/containers/podman/issues/16515 for a description of the protocol.
+		// See https://github.com/khulnasoft-lab/podman/issues/16515 for a description of the protocol.
 		fdSize := unix.CmsgSpace(4)
 		buffer := make([]byte, _notifyBufferMax)
 		oob := make([]byte, _notifyFdMax*fdSize)

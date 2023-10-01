@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/containers/podman/v4/pkg/systemd/quadlet"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/quadlet"
 	"github.com/stretchr/testify/assert"
 )
 

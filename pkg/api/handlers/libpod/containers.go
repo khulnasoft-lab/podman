@@ -8,15 +8,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/api/handlers"
-	"github.com/containers/podman/v4/pkg/api/handlers/compat"
-	"github.com/containers/podman/v4/pkg/api/handlers/utils"
-	api "github.com/containers/podman/v4/pkg/api/types"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/domain/infra/abi"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers/compat"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers/utils"
+	api "github.com/khulnasoft-lab/podman/v4/pkg/api/types"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/infra/abi"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	"github.com/gorilla/schema"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
@@ -90,7 +90,7 @@ func ListContainers(w http.ResponseWriter, r *http.Request) {
 	// Support `last` as an alias for `limit`.  While Podman uses --last in
 	// the CLI, the API is using `limit`.  As we first used `last` in the
 	// API as well, we decided to go with aliasing to prevent any
-	// regression. See github.com/containers/podman/issues/6413.
+	// regression. See github.com/khulnasoft-lab/podman/issues/6413.
 	if _, found := r.URL.Query()["last"]; found {
 		logrus.Info("List containers: received `last` parameter - overwriting `limit`")
 		limit = query.Last
@@ -107,7 +107,7 @@ func ListContainers(w http.ResponseWriter, r *http.Request) {
 		Last:      limit,
 		Namespace: query.Namespace,
 		// Always return Pod, should not be part of the API.
-		// https://github.com/containers/podman/pull/7223
+		// https://github.com/khulnasoft-lab/podman/pull/7223
 		Pod:  true,
 		Size: query.Size,
 		Sync: query.Sync,

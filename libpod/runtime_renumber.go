@@ -3,7 +3,7 @@ package libpod
 import (
 	"fmt"
 
-	"github.com/containers/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
 )
 
 // renumberLocks reassigns lock numbers for all containers and pods in the

@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 // Commit creates a container image from a container.  The container is defined by nameOrID.  Use

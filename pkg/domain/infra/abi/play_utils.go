@@ -1,6 +1,6 @@
 package abi
 
-import "github.com/containers/podman/v4/libpod/define"
+import "github.com/khulnasoft-lab/podman/v4/libpod/define"
 
 // getSdNotifyMode returns the `sdNotifyAnnotation/$name` for the specified
 // name. If name is empty, it'll only look for `sdNotifyAnnotation`.

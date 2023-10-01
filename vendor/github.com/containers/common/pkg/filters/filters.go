@@ -34,7 +34,7 @@ func ComputeUntilTimestamp(filterValues []string) (time.Time, error) {
 // done in older versions of Docker.  We have to do a bit of Yoga to support
 // both - just as Docker does as well.
 //
-// Please refer to https://github.com/containers/podman/issues/6899 for some
+// Please refer to https://github.com/khulnasoft-lab/podman/issues/6899 for some
 // background.
 //
 // revive does not like the name because the package is already called filters

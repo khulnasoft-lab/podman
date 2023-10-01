@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 // List returns information about existing secrets in the form of a slice.

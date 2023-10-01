@@ -11,9 +11,9 @@ import (
 
 	"github.com/containers/common/pkg/cgroups"
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	"github.com/hashicorp/go-multierror"
 	"github.com/sirupsen/logrus"
 )

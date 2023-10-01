@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/sirupsen/logrus"
 )
 

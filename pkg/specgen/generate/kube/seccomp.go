@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod"
-	v1 "github.com/containers/podman/v4/pkg/k8s.io/api/core/v1"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	v1 "github.com/khulnasoft-lab/podman/v4/pkg/k8s.io/api/core/v1"
 )
 
 // KubeSeccompPaths holds information about a pod YAML's seccomp configuration

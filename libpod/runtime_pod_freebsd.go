@@ -1,7 +1,7 @@
 package libpod
 
 import (
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 )
 
 func (r *Runtime) platformMakePod(pod *Pod, p specgen.PodSpecGenerator) error {

@@ -6,7 +6,7 @@ import (
 	"github.com/containers/image/v5/docker"
 	"github.com/containers/image/v5/pkg/shortnames"
 	"github.com/containers/image/v5/transports/alltransports"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 	spec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

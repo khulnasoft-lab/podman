@@ -4,7 +4,7 @@
 [comment]: <> (be manually copy/pasted -in markdown- into the description)
 [comment]: <> (field on Quay at the following locations:)
 [comment]: <> ()
-[comment]: <> (https://quay.io/repository/containers/podman)
+[comment]: <> (https://quay.io/repository/khulnasoft-lab/podman)
 [comment]: <> (https://quay.io/repository/podman/stable)
 [comment]: <> (https://quay.io/repository/podman/testing)
 [comment]: <> (https://quay.io/repository/podman/upstream)
@@ -29,13 +29,13 @@ default to `/`.
 
 The container images are:
 
-  * `quay.io/containers/podman:<version>` and `quay.io/podman/stable:<version>` -
+  * `quay.io/khulnasoft-lab/podman:<version>` and `quay.io/podman/stable:<version>` -
     These images are built daily.  They are intended to contain an unchanging
     and stable version of podman. For the most recent `<version>` tags (`vX`,
     `vX.Y`, and `vX.Y.Z`) the image contents will be updated daily to incorporate
     (especially) security upgrades.  For build details, please [see the
     configuration file](stable/Containerfile).
-  * `quay.io/containers/podman:latest` and `quay.io/podman/stable:latest` -
+  * `quay.io/khulnasoft-lab/podman:latest` and `quay.io/podman/stable:latest` -
     Built daily using the same Containerfile as above.  The Podman version
     will remain the "latest" available in Fedora, however the other image
     contents may vary compared to the version-tagged images.

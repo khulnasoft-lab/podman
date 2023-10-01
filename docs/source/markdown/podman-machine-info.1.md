@@ -35,8 +35,8 @@ Host:
   CurrentMachine: ""
   DefaultMachine: ""
   EventsDir: /run/user/3267/podman
-  MachineConfigDir: /home/myusername/.config/containers/podman/machine/qemu
-  MachineImageDir: /home/myusername/.local/share/containers/podman/machine/qemu
+  MachineConfigDir: /home/myusername/.config/khulnasoft-lab/podman/machine/qemu
+  MachineImageDir: /home/myusername/.local/share/khulnasoft-lab/podman/machine/qemu
   MachineState: ""
   NumberOfMachines: 0
   OS: linux
@@ -60,8 +60,8 @@ $ podman machine info --format json
     "CurrentMachine": "",
     "DefaultMachine": "",
     "EventsDir": "/run/user/3267/podman",
-    "MachineConfigDir": "/home/myusername/.config/containers/podman/machine/qemu",
-    "MachineImageDir": "/home/myusername/.local/share/containers/podman/machine/qemu",
+    "MachineConfigDir": "/home/myusername/.config/khulnasoft-lab/podman/machine/qemu",
+    "MachineImageDir": "/home/myusername/.local/share/khulnasoft-lab/podman/machine/qemu",
     "MachineState": "",
     "NumberOfMachines": 0,
     "OS": "linux",

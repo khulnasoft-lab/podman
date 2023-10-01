@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"text/template"
 
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	. "github.com/containers/podman/v4/test/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gexec"
@@ -97,7 +97,7 @@ registries = ['{{.Host}}:{{.Port}}']`
 		Expect(search.OutputToString()).To(BeValidJSON())
 		Expect(search.OutputToString()).To(ContainSubstring("docker.io/library/busybox"))
 
-		// Test for https://github.com/containers/podman/issues/11894
+		// Test for https://github.com/khulnasoft-lab/podman/issues/11894
 		contents := make([]entities.ImageSearchReport, 0)
 		err := json.Unmarshal(search.Out.Contents(), &contents)
 		Expect(err).ToNot(HaveOccurred())
@@ -117,7 +117,7 @@ registries = ['{{.Host}}:{{.Port}}']`
 		Expect(search.OutputToString()).To(ContainSubstring("3.2"))
 	})
 
-	// Test for https://github.com/containers/podman/issues/11894
+	// Test for https://github.com/khulnasoft-lab/podman/issues/11894
 	It("podman search no-trunc=false flag", func() {
 		search := podmanTest.Podman([]string{"search", "--no-trunc=false", "alpine", "--format={{.Description}}"})
 		search.WaitWithDefaultTimeout()

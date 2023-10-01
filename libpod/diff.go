@@ -3,8 +3,8 @@ package libpod
 import (
 	"fmt"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/layers"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/layers"
 	"github.com/containers/storage/pkg/archive"
 )
 

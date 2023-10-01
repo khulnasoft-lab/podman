@@ -23,9 +23,9 @@ import (
 	"time"
 
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/rootless"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	"github.com/containers/storage/pkg/ioutils"
 	"github.com/containers/storage/pkg/lockfile"
 	"github.com/digitalocean/go-qemu/qmp"
@@ -550,7 +550,7 @@ func runStartVMCommand(cmd *exec.Cmd) error {
 		if !errors.Is(err, os.ErrNotExist) {
 			return err
 		}
-		// look up qemu again maybe the path was changed, https://github.com/containers/podman/issues/13394
+		// look up qemu again maybe the path was changed, https://github.com/khulnasoft-lab/podman/issues/13394
 		cfg, err := config.Default()
 		if err != nil {
 			return err

@@ -7,7 +7,7 @@ import (
 	"errors"
 
 	"github.com/containers/common/libimage"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	spec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

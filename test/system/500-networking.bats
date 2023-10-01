@@ -33,7 +33,7 @@ load helpers.network
     run_podman network rm $net1 $net2 $net3
 }
 
-# Copied from tsweeney's https://github.com/containers/podman/issues/4827
+# Copied from tsweeney's https://github.com/khulnasoft-lab/podman/issues/4827
 @test "podman networking: port on localhost" {
     random_1=$(random_string 30)
     random_2=$(random_string 30)
@@ -448,7 +448,7 @@ load helpers.network
     run_podman network rm -t 0 -f $netname
 }
 
-# Test for https://github.com/containers/podman/issues/10052
+# Test for https://github.com/khulnasoft-lab/podman/issues/10052
 # bats test_tags=distro-integration
 @test "podman network connect/disconnect with port forwarding" {
     random_1=$(random_string 30)
@@ -805,7 +805,7 @@ EOF
 }
 
 @test "podman rootless netns works when XDG_RUNTIME_DIR includes symlinks" {
-    # regression test for https://github.com/containers/podman/issues/14606
+    # regression test for https://github.com/khulnasoft-lab/podman/issues/14606
     is_rootless || skip "only meaningful for rootless"
 
     # Create a tmpdir symlink pointing to /run, and use it briefly

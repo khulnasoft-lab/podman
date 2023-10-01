@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 	units "github.com/docker/go-units"
 	"github.com/sirupsen/logrus"
 )

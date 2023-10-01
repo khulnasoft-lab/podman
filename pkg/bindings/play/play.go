@@ -4,8 +4,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/containers/podman/v4/pkg/bindings/kube"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/kube"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 type KubeOptions = kube.PlayOptions

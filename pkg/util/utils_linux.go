@@ -10,8 +10,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/containers/psgo"
 	spec "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/runtime-tools/generate"
@@ -138,7 +138,7 @@ func AddPrivilegedDevices(g *generate.Generator, systemdMode bool) error {
 		for _, d := range hostDevices {
 			/* Restrict access to the virtual consoles *only* when running
 			 * in systemd mode to improve backwards compatibility. See
-			 * https://github.com/containers/podman/issues/15878.
+			 * https://github.com/khulnasoft-lab/podman/issues/15878.
 			 *
 			 * NOTE: May need revisiting in the future to drop the systemd
 			 * condition if more use cases end up breaking the virtual terminals

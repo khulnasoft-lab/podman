@@ -1,11 +1,11 @@
 package images
 
 import (
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/inspect"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	inspectTypes "github.com/containers/podman/v4/pkg/inspect"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/inspect"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	inspectTypes "github.com/khulnasoft-lab/podman/v4/pkg/inspect"
 	"github.com/spf13/cobra"
 )
 

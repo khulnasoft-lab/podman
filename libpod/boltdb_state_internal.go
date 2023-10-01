@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/containers/storage"
 	"github.com/sirupsen/logrus"
 	bolt "go.etcd.io/bbolt"

@@ -14,11 +14,11 @@ import (
 	"github.com/containers/common/libimage"
 	"github.com/containers/image/v5/manifest"
 	imageTypes "github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/pkg/auth"
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/bindings/images"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/errorhandling"
+	"github.com/khulnasoft-lab/podman/v4/pkg/auth"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/images"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/errorhandling"
 	jsoniter "github.com/json-iterator/go"
 )
 

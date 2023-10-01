@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/containers/podman/v4/pkg/bindings"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 // Checkpoint checkpoints the given container (identified by nameOrID).  All additional

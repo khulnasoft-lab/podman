@@ -12,8 +12,8 @@ import (
 
 	"github.com/containers/common/pkg/resize"
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
 	"github.com/containers/storage/pkg/stringid"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"

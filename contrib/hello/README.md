@@ -40,7 +40,7 @@ podman run quay.io/podman/hello
    ~~~~~~~  ~| =(Y_)=-  |
   ~~~~    ~~~|   U      |~~
 
-Project:   https://github.com/containers/podman
+Project:   https://github.com/khulnasoft-lab/podman
 Website:   https://podman.io
 Documents: https://docs.podman.io
 Twitter:   @Podman_io

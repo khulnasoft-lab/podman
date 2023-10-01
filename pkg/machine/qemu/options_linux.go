@@ -1,8 +1,8 @@
 package qemu
 
 import (
-	"github.com/containers/podman/v4/pkg/rootless"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 )
 
 func getRuntimeDir() (string, error) {

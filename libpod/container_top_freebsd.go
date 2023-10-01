@@ -11,8 +11,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	"github.com/google/shlex"
 	"github.com/sirupsen/logrus"
 )

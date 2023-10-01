@@ -418,7 +418,7 @@ Delegate=memory pids cpu io
 	files = append(files, File{
 		Node: Node{
 			Group: GetNodeGrp("root"),
-			Path:  "/etc/containers/podman-machine",
+			Path:  "/etc/khulnasoft-lab/podman-machine",
 			User:  GetNodeUsr("root"),
 		},
 		FileEmbedded1: FileEmbedded1{
@@ -657,7 +657,7 @@ func EncodeDataURLPtr(contents string) *string {
 }
 
 func GetPodmanDockerTmpConfig(uid int, rootful bool, newline bool) string {
-	// Derived from https://github.com/containers/podman/blob/main/contrib/systemd/system/podman-docker.conf
+	// Derived from https://github.com/khulnasoft-lab/podman/blob/main/contrib/systemd/system/podman-docker.conf
 	podmanSock := "/run/podman/podman.sock"
 	if !rootful {
 		podmanSock = fmt.Sprintf("/run/user/%d/podman/podman.sock", uid)

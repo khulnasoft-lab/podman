@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/machine/qemu"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine/qemu"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

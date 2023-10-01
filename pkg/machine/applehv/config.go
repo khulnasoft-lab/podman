@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/containers/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
 	vfConfig "github.com/crc-org/vfkit/pkg/config"
 	"github.com/docker/go-units"
 	"golang.org/x/sys/unix"

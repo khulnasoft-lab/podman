@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	dfilters "github.com/containers/podman/v4/pkg/domain/filters"
-	"github.com/containers/podman/v4/pkg/signal"
-	"github.com/containers/podman/v4/pkg/specgen"
-	"github.com/containers/podman/v4/pkg/specgen/generate"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	dfilters "github.com/khulnasoft-lab/podman/v4/pkg/domain/filters"
+	"github.com/khulnasoft-lab/podman/v4/pkg/signal"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen/generate"
 	"github.com/sirupsen/logrus"
 )
 

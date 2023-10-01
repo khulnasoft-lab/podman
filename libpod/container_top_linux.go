@@ -18,8 +18,8 @@ import (
 	"unsafe"
 
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/containers/psgo"
 	"github.com/containers/storage/pkg/reexec"
 	"github.com/google/shlex"

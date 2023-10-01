@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/containers/common/libnetwork/etchosts"
-	"github.com/containers/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

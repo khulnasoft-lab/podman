@@ -5,9 +5,9 @@ import (
 	"os"
 
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/machine/hyperv"
-	"github.com/containers/podman/v4/pkg/machine/wsl"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine/hyperv"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine/wsl"
 	"github.com/sirupsen/logrus"
 )
 

@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/containers/podman/v4/pkg/systemd/parser"
-	"github.com/containers/podman/v4/version"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/parser"
+	"github.com/khulnasoft-lab/podman/v4/version"
 	"github.com/mattn/go-shellwords"
 
 	. "github.com/onsi/ginkgo/v2"

@@ -1,4 +1,4 @@
-module github.com/containers/podman/v4
+module github.com/khulnasoft-lab/podman/v4
 
 go 1.18
 

@@ -92,7 +92,7 @@ echo $rand        |   0 | $rand
 }
 
 # 'run --rm' goes through different code paths and may lose exit status.
-# See https://github.com/containers/podman/issues/3795
+# See https://github.com/khulnasoft-lab/podman/issues/3795
 @test "podman run --rm" {
 
     run_podman 0 run --rm $IMAGE /bin/true
@@ -694,7 +694,7 @@ json-file | f
     fi
 }
 
-# https://github.com/containers/podman/issues/9096
+# https://github.com/khulnasoft-lab/podman/issues/9096
 # podman exec may truncate stdout/stderr; actually a bug in conmon:
 # https://github.com/containers/conmon/issues/236
 # bats test_tags=distro-integration

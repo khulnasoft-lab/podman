@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/containers/common/pkg/machine"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	"github.com/stretchr/testify/assert"
 )
 

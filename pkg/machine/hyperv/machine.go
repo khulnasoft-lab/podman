@@ -17,9 +17,9 @@ import (
 
 	"github.com/containers/common/pkg/config"
 	"github.com/containers/libhvee/pkg/hypervctl"
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/util"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/containers/storage/pkg/ioutils"
 	"github.com/docker/go-units"
 	"github.com/sirupsen/logrus"

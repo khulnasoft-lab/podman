@@ -6,7 +6,7 @@ package libpod
 import (
 	"errors"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 func (r *Runtime) info() (*define.Info, error) {

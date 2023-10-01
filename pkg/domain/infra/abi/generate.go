@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	k8sAPI "github.com/containers/podman/v4/pkg/k8s.io/api/core/v1"
-	"github.com/containers/podman/v4/pkg/specgen"
-	generateUtils "github.com/containers/podman/v4/pkg/specgen/generate"
-	"github.com/containers/podman/v4/pkg/systemd/generate"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	k8sAPI "github.com/khulnasoft-lab/podman/v4/pkg/k8s.io/api/core/v1"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
+	generateUtils "github.com/khulnasoft-lab/podman/v4/pkg/specgen/generate"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/generate"
 	"sigs.k8s.io/yaml"
 )
 

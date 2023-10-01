@@ -9,12 +9,12 @@ import (
 
 	"github.com/containers/common/pkg/completion"
 	"github.com/containers/common/pkg/report"
-	"github.com/containers/podman/v4/cmd/podman/common"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/cmd/podman/utils"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	envLib "github.com/containers/podman/v4/pkg/env"
-	systemDefine "github.com/containers/podman/v4/pkg/systemd/define"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/common"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	envLib "github.com/khulnasoft-lab/podman/v4/pkg/env"
+	systemDefine "github.com/khulnasoft-lab/podman/v4/pkg/systemd/define"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

@@ -235,7 +235,7 @@ skip_if_remote "--output option not implemented in podman-remote" \
                "build with custom build output for multi-stage-cached and output rootfs to directory" \
                "build with custom build output for multi-stage and output rootfs to directory"
 
-# https://github.com/containers/podman/issues/14544
+# https://github.com/khulnasoft-lab/podman/issues/14544
 skip_if_remote "logfile not implemented on remote" "bud-logfile-with-split-logfile-by-platform"
 
 skip_if_remote "envariables do not automatically work with -remote." \

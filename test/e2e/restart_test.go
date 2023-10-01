@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	. "github.com/containers/podman/v4/test/utils"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gexec"
@@ -177,7 +177,7 @@ var _ = Describe("Podman restart", func() {
 	})
 
 	It("podman restart a container in a pod and hosts should not duplicated", func() {
-		// Fixes: https://github.com/containers/podman/issues/8921
+		// Fixes: https://github.com/khulnasoft-lab/podman/issues/8921
 
 		_, ec, _ := podmanTest.CreatePod(map[string][]string{"--name": {"foobar99"}})
 		Expect(ec).To(Equal(0))

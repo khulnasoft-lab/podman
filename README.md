@@ -2,7 +2,7 @@
 
 # Podman: A tool for managing OCI containers and pods
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/containers/podman)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/khulnasoft-lab/podman)
 [![Go Report Card](https://goreportcard.com/badge/github.com/containers/libpod)](https://goreportcard.com/report/github.com/containers/libpod)
 
 <br/>
@@ -15,8 +15,8 @@ Podman is based on libpod, a library for container lifecycle management that is 
 All releases are GPG signed. Public keys of members of the team approved to make releases are located [here](https://github.com/containers/release-keys/tree/main/podman).
 
 * Continuous Integration:
-  * [![Build Status](https://api.cirrus-ci.com/github/containers/podman.svg)](https://cirrus-ci.com/github/containers/podman/master)
-  * [GoDoc: ![GoDoc](https://godoc.org/github.com/containers/podman/libpod?status.svg)](https://godoc.org/github.com/containers/podman/libpod)
+  * [![Build Status](https://api.cirrus-ci.com/github/khulnasoft-lab/podman.svg)](https://cirrus-ci.com/github/khulnasoft-lab/podman/master)
+  * [GoDoc: ![GoDoc](https://godoc.org/github.com/khulnasoft-lab/podman/libpod?status.svg)](https://godoc.org/github.com/khulnasoft-lab/podman/libpod)
   * [Downloads](DOWNLOADS.md)
 
 ## Overview and scope
@@ -50,9 +50,9 @@ For general questions and discussion, please use Podman's
 [channels](https://podman.io/community/#slack-irc-matrix-and-discord).
 
 For discussions around issues/bugs and features, you can use the GitHub
-[issues](https://github.com/containers/podman/issues)
+[issues](https://github.com/khulnasoft-lab/podman/issues)
 and
-[PRs](https://github.com/containers/podman/pulls)
+[PRs](https://github.com/khulnasoft-lab/podman/pulls)
 tracking system.
 
 There is also a [mailing list](https://lists.podman.io/archives/) at `lists.podman.io`.
@@ -65,14 +65,14 @@ Rootless Podman runs locked-down containers with no privileges that the user run
 Some of these restrictions can be lifted (via `--privileged`, for example), but rootless containers will never have more privileges than the user that launched them.
 If you run Podman as your user and mount in `/etc/passwd` from the host, you still won't be able to change it, since your user doesn't have permission to do so.
 
-Almost all normal Podman functionality is available, though there are some [shortcomings](https://github.com/containers/podman/blob/main/rootless.md).
+Almost all normal Podman functionality is available, though there are some [shortcomings](https://github.com/khulnasoft-lab/podman/blob/main/rootless.md).
 Any recent Podman release should be able to run rootless without any additional configuration, though your operating system may require some additional configuration detailed in the [install guide](https://podman.io/getting-started/installation).
 
-A little configuration by an administrator is required before rootless Podman can be used, the necessary setup is documented [here](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md).
+A little configuration by an administrator is required before rootless Podman can be used, the necessary setup is documented [here](https://github.com/khulnasoft-lab/podman/blob/main/docs/tutorials/rootless_tutorial.md).
 
 ## Podman Desktop
 
-[Podman Desktop](https://podman-desktop.io/) is a new project under the container organization built to help the developers working with containers from their local environment with a desktop UI. Podman Desktop is still in its early days, but already provides capabilities to list your images, interact with containers (access logs, get a terminal), connect to registries (pull private images, push your images) and configure podman settings (proxies). The project develops on [Github](https://github.com/containers/podman-desktop) and contributors are welcome.
+[Podman Desktop](https://podman-desktop.io/) is a new project under the container organization built to help the developers working with containers from their local environment with a desktop UI. Podman Desktop is still in its early days, but already provides capabilities to list your images, interact with containers (access logs, get a terminal), connect to registries (pull private images, push your images) and configure podman settings (proxies). The project develops on [Github](https://github.com/khulnasoft-lab/podman-desktop) and contributors are welcome.
 
 ## Out of scope
 
@@ -119,10 +119,10 @@ includes tables showing Docker commands and their Podman equivalent commands.
 **[Tutorials](docs/tutorials)**
 Tutorials on using Podman.
 
-**[Remote Client](https://github.com/containers/podman/blob/main/docs/tutorials/remote_client.md)**
+**[Remote Client](https://github.com/khulnasoft-lab/podman/blob/main/docs/tutorials/remote_client.md)**
 A brief how-to on using the Podman remote client.
 
-**[Basic Setup and Use of Podman in a Rootless environment](https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md)**
+**[Basic Setup and Use of Podman in a Rootless environment](https://github.com/khulnasoft-lab/podman/blob/main/docs/tutorials/rootless_tutorial.md)**
 A tutorial showing the setup and configuration necessary to run Rootless Podman.
 
 **[Release Notes](RELEASE_NOTES.md)**
@@ -139,7 +139,7 @@ Buildah and Podman are two complementary open-source projects that are
 available on most Linux platforms and both projects reside at
 [GitHub.com](https://github.com) with Buildah
 [here](https://github.com/containers/buildah) and Podman
-[here](https://github.com/containers/podman).  Both, Buildah and Podman are
+[here](https://github.com/khulnasoft-lab/podman).  Both, Buildah and Podman are
 command line tools that work on Open Container Initiative (OCI) images and
 containers.  The two projects differentiate in their specialization.
 
@@ -192,7 +192,7 @@ Storing signatures
    ~~~~~~~  ~| =(Y_)=-  |
   ~~~~    ~~~|   U      |~~
 
-Project:   https://github.com/containers/podman
+Project:   https://github.com/khulnasoft-lab/podman
 Website:   https://podman.io
 Documents: https://docs.podman.io
 Twitter:   @Podman_io

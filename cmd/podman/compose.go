@@ -16,9 +16,9 @@ import (
 	"text/template"
 
 	"github.com/containers/common/pkg/config"
-	cmdMachine "github.com/containers/podman/v4/cmd/podman/machine"
-	"github.com/containers/podman/v4/cmd/podman/registry"
-	"github.com/containers/podman/v4/pkg/machine"
+	cmdMachine "github.com/khulnasoft-lab/podman/v4/cmd/podman/machine"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/registry"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
@@ -209,9 +209,9 @@ func composeEnv() ([]string, error) {
 		// a continuous catch-up game, disable buildkit on the client
 		// side.
 		//
-		// See https://github.com/containers/podman/issues/18617#issuecomment-1600495841
+		// See https://github.com/khulnasoft-lab/podman/issues/18617#issuecomment-1600495841
 		"DOCKER_BUILDKIT=0",
-		// FIXME: DOCKER_CONFIG is limited by containers/podman/issues/18617
+		// FIXME: DOCKER_CONFIG is limited by khulnasoft-lab/podman/issues/18617
 		//        and it remains unclear which default path should be set
 		//        w.r.t. Docker compatibility and a smooth experience of podman-login
 		//        working with podman-compose _by default_.

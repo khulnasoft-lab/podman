@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/containers/podman/v4/pkg/bindings/secrets"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/errorhandling"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/secrets"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/errorhandling"
 )
 
 func (ic *ContainerEngine) SecretCreate(ctx context.Context, name string, reader io.Reader, options entities.SecretCreateOptions) (*entities.SecretCreateReport, error) {

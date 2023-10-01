@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/docker/go-units"
 	"github.com/sirupsen/logrus"
 )

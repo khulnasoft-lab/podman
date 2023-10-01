@@ -16,8 +16,8 @@ import (
 	"time"
 
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/bindings"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings"
 	"github.com/moby/term"
 	"github.com/sirupsen/logrus"
 	terminal "golang.org/x/term"

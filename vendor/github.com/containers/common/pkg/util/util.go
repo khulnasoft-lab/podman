@@ -19,7 +19,7 @@ const (
 	UnknownPackage = "Unknown"
 )
 
-// Note: This function is copied from containers/podman libpod/util.go
+// Note: This function is copied from khulnasoft-lab/podman libpod/util.go
 // Please see https://github.com/containers/common/pull/1460
 func queryPackageVersion(cmdArg ...string) string {
 	output := UnknownPackage
@@ -53,7 +53,7 @@ func queryPackageVersion(cmdArg ...string) string {
 	return strings.Trim(output, "\n")
 }
 
-// Note: This function is copied from containers/podman libpod/util.go
+// Note: This function is copied from khulnasoft-lab/podman libpod/util.go
 // Please see https://github.com/containers/common/pull/1460
 func PackageVersion(program string) string { // program is full path
 	_, err := os.Stat(program)
@@ -80,7 +80,7 @@ func PackageVersion(program string) string { // program is full path
 	return UnknownPackage
 }
 
-// Note: This function is copied from containers/podman libpod/util.go
+// Note: This function is copied from khulnasoft-lab/podman libpod/util.go
 // Please see https://github.com/containers/common/pull/1460
 func ProgramVersion(program string) (string, error) {
 	return programVersion(program, false)
@@ -135,7 +135,7 @@ func StringMatchRegexSlice(s string, re []string) bool {
 // FilterID is a function used to compare an id against a set of ids, if the
 // input is hex we check if the prefix matches. Otherwise we assume it is a
 // regex and try to match that.
-// see https://github.com/containers/podman/issues/18471 for why we do this
+// see https://github.com/khulnasoft-lab/podman/issues/18471 for why we do this
 func FilterID(id string, filters []string) bool {
 	for _, want := range filters {
 		isRegex := types.NotHexRegex.MatchString(want)

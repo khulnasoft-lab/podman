@@ -6,10 +6,10 @@ import (
 	"io"
 
 	"github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/pkg/bindings/generate"
-	"github.com/containers/podman/v4/pkg/bindings/kube"
-	"github.com/containers/podman/v4/pkg/bindings/play"
-	"github.com/containers/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/generate"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/kube"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/play"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
 )
 
 func (ic *ContainerEngine) GenerateSystemd(ctx context.Context, nameOrID string, opts entities.GenerateSystemdOptions) (*entities.GenerateSystemdReport, error) {

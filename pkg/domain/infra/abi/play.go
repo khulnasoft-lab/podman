@@ -18,19 +18,19 @@ import (
 	"github.com/containers/common/pkg/config"
 	"github.com/containers/common/pkg/secrets"
 	"github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/cmd/podman/parse"
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	v1apps "github.com/containers/podman/v4/pkg/k8s.io/api/apps/v1"
-	v1 "github.com/containers/podman/v4/pkg/k8s.io/api/core/v1"
-	"github.com/containers/podman/v4/pkg/specgen"
-	"github.com/containers/podman/v4/pkg/specgen/generate"
-	"github.com/containers/podman/v4/pkg/specgen/generate/kube"
-	"github.com/containers/podman/v4/pkg/specgenutil"
-	"github.com/containers/podman/v4/pkg/systemd/notifyproxy"
-	"github.com/containers/podman/v4/pkg/util"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/cmd/podman/parse"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	v1apps "github.com/khulnasoft-lab/podman/v4/pkg/k8s.io/api/apps/v1"
+	v1 "github.com/khulnasoft-lab/podman/v4/pkg/k8s.io/api/core/v1"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen/generate"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen/generate/kube"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgenutil"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd/notifyproxy"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/coreos/go-systemd/v22/daemon"
 	"github.com/opencontainers/go-digest"
 	"github.com/opencontainers/selinux/go-selinux"
@@ -330,7 +330,7 @@ func (ic *ContainerEngine) PlayKube(ctx context.Context, body io.Reader, options
 
 	if options.ServiceContainer && ranContainers {
 		switch len(notifyProxies) {
-		case 0: // Optimization for containers/podman/issues/17345
+		case 0: // Optimization for khulnasoft-lab/podman/issues/17345
 			// No container needs sdnotify, so we can mark the
 			// service container's conmon as the main PID and
 			// return early.
@@ -737,7 +737,7 @@ func (ic *ContainerEngine) playKubePod(ctx context.Context, podName string, podY
 			return nil, nil, err
 		}
 
-		// ensure the environment is setup for initContainers as well: https://github.com/containers/podman/issues/18384
+		// ensure the environment is setup for initContainers as well: https://github.com/khulnasoft-lab/podman/issues/18384
 		warn, err := generate.CompleteSpec(ctx, ic.Libpod, specGen)
 		if err != nil {
 			return nil, nil, err

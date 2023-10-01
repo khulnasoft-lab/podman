@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/containers/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
 )
 
 // VZMachineState is what the restful service in vfkit will return

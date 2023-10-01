@@ -9,13 +9,13 @@ import (
 
 	nettypes "github.com/containers/common/libnetwork/types"
 	netutil "github.com/containers/common/libnetwork/util"
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/api/handlers/utils"
-	api "github.com/containers/podman/v4/pkg/api/types"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	"github.com/containers/podman/v4/pkg/domain/infra/abi"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers/utils"
+	api "github.com/khulnasoft-lab/podman/v4/pkg/api/types"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/infra/abi"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	"github.com/docker/docker/api/types"
 
 	dockerNetwork "github.com/docker/docker/api/types/network"
@@ -123,7 +123,7 @@ func convertLibpodNetworktoDockerNetwork(runtime *libpod.Runtime, network *netty
 	}
 	options := network.Options
 	// bridge always has isolate set in the compat API but we should not return it to not confuse callers
-	// https://github.com/containers/podman/issues/15580
+	// https://github.com/khulnasoft-lab/podman/issues/15580
 	delete(options, nettypes.IsolateOption)
 
 	report := types.NetworkResource{

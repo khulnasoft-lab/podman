@@ -125,7 +125,7 @@ See storage.conf(5) for all available configuration settings.
 ### Network performance for rootless Podman
 
 When using rootless Podman, network traffic is normally passed through
-[slirp4netns](https://github.com/containers/podman/blob/main/docs/tutorials/basic_networking.md#slirp4netns).
+[slirp4netns](https://github.com/khulnasoft-lab/podman/blob/main/docs/tutorials/basic_networking.md#slirp4netns).
 This comes with a performance penalty.
 
 You can avoid using slirp4netns in the following ways:
@@ -137,7 +137,7 @@ You can avoid using slirp4netns in the following ways:
     Using a service on demand, can free up compute resources.
   + Start the service explicitly (`systemctl --user enable foobar.service`). If the service is already
     running when the first client connects, there will be no delay due to container startup.
-  The [socket activation tutorial](https://github.com/containers/podman/blob/main/docs/tutorials/socket_activation.md)
+  The [socket activation tutorial](https://github.com/khulnasoft-lab/podman/blob/main/docs/tutorials/socket_activation.md)
   provides more information about socket activation support in Podman.
 
 * Use the network driver [_pasta_](https://passt.top/passt/about/#pasta). Pasta is under development and currently needs a patched Podman to run.

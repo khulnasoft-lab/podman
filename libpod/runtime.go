@@ -24,15 +24,15 @@ import (
 	"github.com/containers/image/v5/pkg/sysregistriesv2"
 	is "github.com/containers/image/v5/storage"
 	"github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
-	"github.com/containers/podman/v4/libpod/lock"
-	"github.com/containers/podman/v4/libpod/plugin"
-	"github.com/containers/podman/v4/libpod/shutdown"
-	"github.com/containers/podman/v4/pkg/rootless"
-	"github.com/containers/podman/v4/pkg/systemd"
-	"github.com/containers/podman/v4/pkg/util"
-	"github.com/containers/podman/v4/utils"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/libpod/lock"
+	"github.com/khulnasoft-lab/podman/v4/libpod/plugin"
+	"github.com/khulnasoft-lab/podman/v4/libpod/shutdown"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/pkg/systemd"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/utils"
 	"github.com/containers/storage"
 	"github.com/containers/storage/pkg/lockfile"
 	"github.com/containers/storage/pkg/unshare"
@@ -577,7 +577,7 @@ func makeRuntime(runtime *Runtime) (retErr error) {
 			}
 
 			// create the path in case it does not already exists
-			// https://github.com/containers/podman/issues/8539
+			// https://github.com/khulnasoft-lab/podman/issues/8539
 			if err := os.MkdirAll(filepath.Dir(pausePid), 0o700); err != nil {
 				return fmt.Errorf("could not create pause process pid file directory: %w", err)
 			}

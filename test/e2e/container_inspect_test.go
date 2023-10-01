@@ -1,8 +1,8 @@
 package integration
 
 import (
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/pkg/annotations"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/pkg/annotations"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gexec"

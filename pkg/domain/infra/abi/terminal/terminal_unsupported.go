@@ -8,8 +8,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 // ExecAttachCtr execs and attaches to a container

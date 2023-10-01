@@ -9,14 +9,14 @@ that we follow.
 * [Reporting Issues](#reporting-issues)
 * [Working On Issues](#working-on-issues)
 * [Contributing to Podman](#contributing-to-podman)
-* [Continuous Integration](#continuous-integration) [![Build Status](https://api.cirrus-ci.com/github/containers/podman.svg)](https://cirrus-ci.com/github/containers/podman/master)
+* [Continuous Integration](#continuous-integration) [![Build Status](https://api.cirrus-ci.com/github/khulnasoft-lab/podman.svg)](https://cirrus-ci.com/github/khulnasoft-lab/podman/master)
 * [Submitting Pull Requests](#submitting-pull-requests)
 * [Communications](#communications)
 
 ## Reporting Issues
 
 Before reporting an issue, check our backlog of
-[open issues](https://github.com/containers/podman/issues)
+[open issues](https://github.com/khulnasoft-lab/podman/issues)
 to see if someone else has already reported it. If so, feel free to add
 your scenario, or additional information, to the discussion. Or simply
 "subscribe" to it to be notified when it is updated.
@@ -36,7 +36,7 @@ Please don't include any private/sensitive information in your issue!
 ## Working On Issues
 
 Once you have decided to contribute to Podman by working on an issue, check our
-backlog of [open issues](https://github.com/containers/podman/issues) looking
+backlog of [open issues](https://github.com/khulnasoft-lab/podman/issues) looking
 for any that do not have an "In Progress" label attached to it.  Often issues
 will be assigned to someone, to be worked on at a later time.  If you have the
 time to work on the issue now add yourself as an assignee, and set the
@@ -69,8 +69,8 @@ Create a path that corresponds to the go import paths of Podman: `mkdir -p $GOPA
 
 Then clone your fork locally:
 ```shell
-$ git clone git@github.com:<you>/podman $GOPATH/src/github.com/containers/podman
-$ cd $GOPATH/src/github.com/containers/podman
+$ git clone git@github.com:<you>/podman $GOPATH/src/github.com/khulnasoft-lab/podman
+$ cd $GOPATH/src/github.com/khulnasoft-lab/podman
 ```
 
 ### Deal with make
@@ -337,7 +337,7 @@ All pull requests and branch-merges automatically run:
 There is always additional complexity added by automation, and so it sometimes
 can fail for any number of reasons.  This includes post-merge testing on all
 branches, which you may occasionally see [red bars on the status graph
-.](https://cirrus-ci.com/github/containers/podman/master)
+.](https://cirrus-ci.com/github/khulnasoft-lab/podman/master)
 
 When the graph shows mostly green bars on the right, it's a good indication
 the main branch is currently stable.  Alternating red/green bars is indicative
@@ -370,9 +370,9 @@ For general questions and discussion, please use the
 IRC `#podman` channel on `irc.libera.chat`.
 
 For discussions around issues/bugs and features, you can use the GitHub
-[issues](https://github.com/containers/podman/issues)
+[issues](https://github.com/khulnasoft-lab/podman/issues)
 and
-[PRs](https://github.com/containers/podman/pulls)
+[PRs](https://github.com/khulnasoft-lab/podman/pulls)
 tracking system.
 
 There is also a [mailing list](https://lists.podman.io/archives/) at `lists.podman.io`.

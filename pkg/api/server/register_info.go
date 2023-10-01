@@ -3,8 +3,8 @@ package server
 import (
 	"net/http"
 
-	"github.com/containers/podman/v4/pkg/api/handlers/compat"
-	"github.com/containers/podman/v4/pkg/api/handlers/libpod"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers/compat"
+	"github.com/khulnasoft-lab/podman/v4/pkg/api/handlers/libpod"
 	"github.com/gorilla/mux"
 )
 

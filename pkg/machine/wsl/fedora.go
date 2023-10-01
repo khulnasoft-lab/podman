@@ -15,12 +15,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containers/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
 )
 
 const (
-	githubX86ReleaseURL = "https://github.com/containers/podman-wsl-fedora/releases/latest/download/rootfs.tar.xz"
-	githubArmReleaseURL = "https://github.com/containers/podman-wsl-fedora-arm/releases/latest/download/rootfs.tar.xz"
+	githubX86ReleaseURL = "https://github.com/khulnasoft-lab/podman-wsl-fedora/releases/latest/download/rootfs.tar.xz"
+	githubArmReleaseURL = "https://github.com/khulnasoft-lab/podman-wsl-fedora-arm/releases/latest/download/rootfs.tar.xz"
 )
 
 type FedoraDownload struct {

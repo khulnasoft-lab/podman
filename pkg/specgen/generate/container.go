@@ -12,12 +12,12 @@ import (
 
 	"github.com/containers/common/libimage"
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
-	ann "github.com/containers/podman/v4/pkg/annotations"
-	envLib "github.com/containers/podman/v4/pkg/env"
-	"github.com/containers/podman/v4/pkg/signal"
-	"github.com/containers/podman/v4/pkg/specgen"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	ann "github.com/khulnasoft-lab/podman/v4/pkg/annotations"
+	envLib "github.com/khulnasoft-lab/podman/v4/pkg/env"
+	"github.com/khulnasoft-lab/podman/v4/pkg/signal"
+	"github.com/khulnasoft-lab/podman/v4/pkg/specgen"
 	"github.com/openshift/imagebuilder"
 	"github.com/sirupsen/logrus"
 )

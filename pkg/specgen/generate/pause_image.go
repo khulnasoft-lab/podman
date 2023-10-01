@@ -7,8 +7,8 @@ import (
 
 	buildahDefine "github.com/containers/buildah/define"
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/libpod"
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 // PullOrBuildInfraImage pulls down the specified image or the one set in

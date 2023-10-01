@@ -14,10 +14,10 @@ import (
 	"github.com/containers/common/pkg/config"
 	"github.com/containers/common/pkg/machine"
 	"github.com/containers/common/pkg/util"
-	"github.com/containers/podman/v4/libpod/define"
-	"github.com/containers/podman/v4/libpod/events"
-	"github.com/containers/podman/v4/pkg/namespaces"
-	"github.com/containers/podman/v4/pkg/rootless"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/events"
+	"github.com/khulnasoft-lab/podman/v4/pkg/namespaces"
+	"github.com/khulnasoft-lab/podman/v4/pkg/rootless"
 	"github.com/containers/storage/pkg/lockfile"
 	"github.com/sirupsen/logrus"
 )
@@ -219,7 +219,7 @@ func (c *Container) getContainerNetworkInfo() (*define.InspectNetworkSettings, e
 		if err != nil {
 			return nil, err
 		}
-		// see https://github.com/containers/podman/issues/10090
+		// see https://github.com/khulnasoft-lab/podman/issues/10090
 		// the container has to be locked for syncContainer()
 		netNsCtr.lock.Lock()
 		defer netNsCtr.lock.Unlock()

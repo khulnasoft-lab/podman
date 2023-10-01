@@ -81,7 +81,7 @@ setup() {
 # Argh! podman >= 3.4 something something namespace something, fails with
 #   Error: invalid config provided: cannot set hostname when running in the host UTS namespace: invalid configuration
 #
-# https://github.com/containers/podman/issues/11969#issuecomment-943386484
+# https://github.com/khulnasoft-lab/podman/issues/11969#issuecomment-943386484
 #
 if grep -q utsns /etc/containers/containers.conf; then
     sed -i -e '/^\utsns=/d' /etc/containers/containers.conf
@@ -271,7 +271,7 @@ failed    | exited     | 17
 @test "network - restart" {
     # restart the container and check if we can still use the port
 
-    # https://github.com/containers/podman/issues/13679
+    # https://github.com/khulnasoft-lab/podman/issues/13679
     # The upgrade to podman4 changes the network db format.
     # While it is compatible from 3.X to 4.0 it will fail the other way around.
     # This can be the case when the cleanup process runs before the stop process

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"syscall"
 
-	"github.com/containers/podman/v4/libpod/lock/shm"
+	"github.com/khulnasoft-lab/podman/v4/libpod/lock/shm"
 )
 
 // SHMLockManager manages shared memory locks.

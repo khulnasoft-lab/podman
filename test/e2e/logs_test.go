@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"time"
 
-	. "github.com/containers/podman/v4/test/utils"
+	. "github.com/khulnasoft-lab/podman/v4/test/utils"
 	"github.com/containers/storage/pkg/stringid"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -119,7 +119,7 @@ var _ = Describe("Podman logs", func() {
 			skipIfJournaldInContainer()
 
 			// we match 800 line array here, make sure to print all lines when assertion fails.
-			// There is something weird going on (https://github.com/containers/podman/issues/18501)
+			// There is something weird going on (https://github.com/khulnasoft-lab/podman/issues/18501)
 			// and only the normal output log does not seem to be enough to figure out why it flakes.
 			oldLength := format.MaxLength
 			// unlimited matcher output

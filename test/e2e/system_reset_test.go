@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/gomega/gexec"
 )
 
-// system reset must run serial: https://github.com/containers/podman/issues/17903
+// system reset must run serial: https://github.com/khulnasoft-lab/podman/issues/17903
 var _ = Describe("podman system reset", Serial, func() {
 
 	It("podman system reset", func() {

@@ -6,7 +6,7 @@ package libpod
 import (
 	"errors"
 
-	"github.com/containers/podman/v4/libpod/define"
+	"github.com/khulnasoft-lab/podman/v4/libpod/define"
 )
 
 func (c *Container) stat(containerMountPoint string, containerPath string) (*define.FileInfo, string, string, error) {

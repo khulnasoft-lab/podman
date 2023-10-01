@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/containers/image/v5/types"
-	"github.com/containers/podman/v4/pkg/bindings/images"
-	"github.com/containers/podman/v4/pkg/bindings/manifests"
-	"github.com/containers/podman/v4/pkg/domain/entities"
-	envLib "github.com/containers/podman/v4/pkg/env"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/images"
+	"github.com/khulnasoft-lab/podman/v4/pkg/bindings/manifests"
+	"github.com/khulnasoft-lab/podman/v4/pkg/domain/entities"
+	envLib "github.com/khulnasoft-lab/podman/v4/pkg/env"
 )
 
 // ManifestCreate implements manifest create via ImageEngine

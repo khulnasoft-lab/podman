@@ -18,9 +18,9 @@ import (
 	"time"
 
 	"github.com/containers/common/pkg/config"
-	"github.com/containers/podman/v4/pkg/machine"
-	"github.com/containers/podman/v4/pkg/machine/wsl/wutil"
-	"github.com/containers/podman/v4/pkg/util"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine"
+	"github.com/khulnasoft-lab/podman/v4/pkg/machine/wsl/wutil"
+	"github.com/khulnasoft-lab/podman/v4/pkg/util"
 	"github.com/containers/storage/pkg/homedir"
 	"github.com/containers/storage/pkg/ioutils"
 	"github.com/sirupsen/logrus"
@@ -548,7 +548,7 @@ func configureSystem(v *MachineVM, dist string) error {
 		return err
 	}
 
-	if err := wslInvoke(dist, "sh", "-c", "echo wsl > /etc/containers/podman-machine"); err != nil {
+	if err := wslInvoke(dist, "sh", "-c", "echo wsl > /etc/khulnasoft-lab/podman-machine"); err != nil {
 		return fmt.Errorf("could not create podman-machine file for guest OS: %w", err)
 	}
 

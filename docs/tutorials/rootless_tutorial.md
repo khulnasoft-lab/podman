@@ -76,7 +76,7 @@ The format of this file is `USERNAME:UID:RANGE`
 
 This means the user `johndoe` is allocated UIDs 100000-165535 as well as their standard UID in the `/etc/passwd` file.  NOTE: this is not currently supported with network installs; these files must be available locally to the host machine.  It is not possible to configure this with LDAP or Active Directory.
 
-If you update either `/etc/subuid` or `/etc/subgid`, you need to stop all the running containers owned by the user and kill the pause process that is running on the system for that user.  This can be done automatically by using the [`podman system migrate`](https://github.com/containers/podman/blob/main/docs/source/markdown/podman-system-migrate.1.md) command which will stop all the containers for the user and will kill the pause process.
+If you update either `/etc/subuid` or `/etc/subgid`, you need to stop all the running containers owned by the user and kill the pause process that is running on the system for that user.  This can be done automatically by using the [`podman system migrate`](https://github.com/khulnasoft-lab/podman/blob/main/docs/source/markdown/podman-system-migrate.1.md) command which will stop all the containers for the user and will kill the pause process.
 
 Rather than updating the files directly, the `usermod` program can be used to assign UIDs and GIDs to a user.
 
@@ -193,6 +193,6 @@ Another consideration in regards to volumes:
 
 ## More information
 
-If you are still experiencing problems running Podman in a rootless environment, please refer to the [Shortcomings of Rootless Podman](https://github.com/containers/podman/blob/main/rootless.md) page which lists known issues and solutions to known issues in this environment.
+If you are still experiencing problems running Podman in a rootless environment, please refer to the [Shortcomings of Rootless Podman](https://github.com/khulnasoft-lab/podman/blob/main/rootless.md) page which lists known issues and solutions to known issues in this environment.
 
 For more information on Podman and its subcommands, follow the links on the main [README.md](../../README.md#podman-information-for-developers) page or the [podman.io](https://podman.io) web site.
