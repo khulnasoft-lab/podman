@@ -47,7 +47,7 @@ require (
 	github.com/onsi/gomega v1.27.10
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.0-rc4
-	github.com/opencontainers/runc v1.1.8
+	github.com/opencontainers/runc v1.1.9
 	github.com/opencontainers/runtime-spec v1.1.0
 	github.com/opencontainers/runtime-tools v0.9.1-0.20230317050512-e931285f4b69
 	github.com/opencontainers/selinux v1.11.0
@@ -84,6 +84,7 @@ require (
 	github.com/bytedance/sonic v1.9.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
+	github.com/cilium/ebpf v0.9.1 // indirect
 	github.com/containerd/cgroups v1.1.0 // indirect
 	github.com/containerd/containerd v1.7.2 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.14.3 // indirect
@@ -196,4 +197,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.1-0.20220617142545-8b9452f75cbc
+replace github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.9
