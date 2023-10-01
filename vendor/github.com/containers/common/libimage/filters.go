@@ -30,7 +30,7 @@ func (i *Image) applyFilters(filters map[string][]filterFunc) (bool, error) {
 			if err != nil {
 				// Some images may have been corrupted in the
 				// meantime, so do an extra check and make the
-				// error non-fatal (see khulnasoft-lab/podman/issues/12582).
+				// error non-fatal (see containers/podman/issues/12582).
 				if errCorrupted := i.isCorrupted(""); errCorrupted != nil {
 					logrus.Errorf(errCorrupted.Error())
 					return false, nil

@@ -484,7 +484,7 @@ func (i *Image) removeRecursive(ctx context.Context, rmMap map[string]*RemoveIma
 	hasChildren, err := i.HasChildren(ctx)
 	if err != nil {
 		// We must be tolerant toward corrupted images.
-		// See khulnasoft-lab/podman commit fd9dd7065d44.
+		// See containers/podman commit fd9dd7065d44.
 		logrus.Warnf("Failed to determine if an image is a parent: %v, ignoring the error", err)
 		hasChildren = false
 	}
@@ -494,7 +494,7 @@ func (i *Image) removeRecursive(ctx context.Context, rmMap map[string]*RemoveIma
 	parent, err := i.Parent(ctx)
 	if err != nil {
 		// We must be tolerant toward corrupted images.
-		// See khulnasoft-lab/podman commit fd9dd7065d44.
+		// See containers/podman commit fd9dd7065d44.
 		logrus.Warnf("Failed to determine parent of image: %v, ignoring the error", err)
 		parent = nil
 	}
@@ -836,7 +836,7 @@ type HasDifferentDigestOptions struct {
 func (i *Image) HasDifferentDigest(ctx context.Context, remoteRef types.ImageReference, options *HasDifferentDigestOptions) (bool, error) {
 	// We need to account for the arch that the image uses.  It seems
 	// common on ARM to tweak this option to pull the correct image.  See
-	// github.com/khulnasoft-lab/podman/issues/6613.
+	// github.com/containers/podman/issues/6613.
 	inspectInfo, err := i.inspectInfo(ctx)
 	if err != nil {
 		return false, err
